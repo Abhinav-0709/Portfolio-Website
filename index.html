@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="model.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lexend:wght@100..900&family=Monsieur+La+Doulaise&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <div class="intro">
+        <h1 class="intro-text">Welcome to My Portfolio</h1>
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">Abhinav.dev</div>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="section">
+            <div class="model-data">
+                <h2>HI, </h2>
+                <h2>I am Abhinav Gupta</h2>
+                <h1><span id="typed-text"></span><span id="cursor">|</span></h1>
+                <p>I craft modern web interfaces with motion, depth, and seamless design.
+                    Whether it’s 3D models, custom animations, or pixel-perfect layouts — I build it all.
+                    Driven by curiosity, built for impact.
+                </p>
+                <div class="glass-social-icons">
+                    <a href="https://github.com/Abhinav-0709" target="_blank" class="glass-icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="www.linkedin.com/in/abhinav-gupta-a2a103334" target="_blank" class="glass-icon"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:mrxsahil247@gmail.com" class="glass-icon" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="header">
+                <div class="nucleus"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+            </div>
+        </section>
+        <section id="about" class="section autoShow">
+            <div class="about-left">
+                <h1><span class="gradient">About Me</span></h1>
+                <h2 class="gradient"><span>Get to know</span> <span>more about me background and
+                        skills</span></h2>
+                <p>
+                    Hey, I'm <strong>Abhinav Gupta</strong> — a web developer aspiring to become a full-fledged MERN
+                    Stack Developer,
+                    with a deep passion for programming, creative design, and building engaging 3D models.
+                    I'm currently pursuing a B.Tech in Computer Science and Engineering.
+                </p>
+                <p>
+                    I specialize in developing AI chatbots and have deployed multiple chatbot solutions.
+                    I love blending AI with web technologies to create smarter digital experiences.
+                </p>
+                <a href="files/resume_abhinav.pdf" class="btn">Download Resume</a>
+            </div>
+
+            <div class="about-right">
+                <h1><span class="gradient">Skills</span></h1>
+                <div class="skills-grid">
+                    <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+                    <div class="skill"><i class="fab fa-react"></i> React</div>
+                    <div class="skill"><i class="fab fa-node-js"></i> Node.js</div>
+                    <div class="skill"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="React" width="40" height="40"></i> Python</div>
+                    <div class="skill"><i class="fas fa-fire"></i> Firebase</div>
+                    <div class="skill"><i class="fas fa-database"></i> MySQL</div>
+                    <div class="skill"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="React"
+                            width="40" height="40"> Java</div>
+                    <div class="skill"><i class="fas fa-copyright"></i> C</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2 class="timeline-title gradient autoShow">My Journey</h2>
+
+            <div class="timeline-container">
+
+                <div class="timeline-item left fadeUp">
+                    <div class="content">
+                        <h3 class="gradient">Internship at @VaultofCode</h3>
+                        <p class="date">Aug 2025 - Sep 2025 (Currently)</p>
+                        <p class="date">Role :- Wed Developer</p>
+                        <p>Worked on UI/UX design, responsive components, and integrated APIs using React and Tailwind
+                            CSS.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right fadeUp">
+                    <div class="content">
+                        <h3 class="gradient">Internship at @Edunet Foundations</h3>
+                        <p class="date">May 2025 - June 2025</p>
+                        <p class="date">Role :- AI/ML Specialist</p>
+                        <p>Completed a 4-week internship focused on AI, Machine Learning, Deep Learning, and Generative
+                            AI using
+                            Microsoft Azure. Gained hands-on experience through real-world projects, supervised learning
+                            (classification
+                            & regression), unsupervised learning, computer vision, and neural networks.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+
+            <div class="projects-section">
+                <div class="projects-scroll" id="projectsScroll">
+                    <div class="project-card" data-project="0">
+                        <img src="screenshots/collage.jpg" alt="Campus-Copilot" class=" project-image">
+                        <div class="project-overlay">
+                            <h3>Campus-Copilot</h3>
+                            <p>AI-Powered ERP System</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="1">
+                        <img src="screenshots/spotify.png" alt="Spotify-Clone" class="project-image">
+                        <div class="project-overlay">
+                            <h3>Spotify-Clone</h3>
+                            <p>Music Player</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="2">
+                        <img src="screenshots/port.png" alt="Portfolio" class="project-image">
+
+                        <div class="project-overlay">
+                            <h3>Abhinav.dev</h3>
+                            <p>Portfolio Website</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="3">
+                        <img src="screenshots/valorant.png" alt="Valorant" class="project-image">
+                        <div class="project-overlay">
+                            <h3>Valorant</h3>
+                            <p>Fun Project</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-info" id="projectInfo">
+                    <h2 class="project-title" id="projectTitle">Campus-Copilot</h2>
+                    <p class="project-description" id="projectDescription">
+                        CampusCopilot is a smart AI assistant built for college students, helping them stay organized
+                        and informed. It answers campus FAQs, sends reminders, recommends local spots, and even detects
+                        "chai break" moments. Designed to make student life smoother, smarter, and stress-free.
+                    </p>
+
+                    <div class="tech-stack" id="techStack">
+                        <div class="tech-label">Tech Stack
+
+                        </div>
+                        <div class="tech-tags" id="techTags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">MySQL</span>
+                            <a href="#" class="social-link" title="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-features" id="projectFeatures">
+                        <div class="features-label">Key Features</div>
+                        <div class="feature-item">
+                            <svg class="feature-icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Chatbot who tell you about every thing on campus info
+                        </div>
+                        <div class="feature-item">
+                            <svg class="feature-icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            ERP System with many smart features
+                        </div>
+                        <div class="feature-item">
+                            <svg class="feature-icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Login System for Admin, Faculty and Student are present.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="contact" class="section">
+            <div class="contact-section">
+                <div class="bg-pattern"></div>
+                <!-- Main Content -->
+                <div class="main-content">
+                    <h1 class="main-title">
+                        FROM SKETCH TO <span class="creation">CREATION</span><br>
+                        LET'S MAKE IT <span class="creation">HAPPEN!</span>
+                    </h1>
+
+                    <div class="cta-container">
+                        <button class="get-in-touch-btn" onclick="openModal()">
+                            Get In Touch
+                            <div class="arrow-icon">→</div>
+                        </button>
+
+                        <div class="open-to-work">
+                            <div class="wheel-outer">
+                                <div class="wheel-inner">
+                                    <div class="wheel-text">
+                                        <svg viewBox="0 0 120 120">
+                                            <path id="wheel" d="M 60,60 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"
+                                                fill="none" />
+                                            <text>
+                                                <textPath href="#wheel" startOffset="0%">
+                                                    OPEN TO WORK • OPEN TO WORK •
+                                                </textPath>
+                                            </text>
+                                        </svg>
+                                    </div>
+                                    <div class="star-center">★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="availability-text">I'm available for full-time roles & freelance projects.</div>
+                    <p class="description">
+                        I thrive on crafting dynamic web applications, and<br>
+                        delivering seamless user experiences.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal">
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+                <div class="modal-header">
+                    <h2 class="modal-title">Let's Work Together</h2>
+                    <p class="modal-subtitle">Tell me about your project and let's create something amazing!</p>
+                </div>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea id="message" name="message" class="form-textarea"
+                            placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-text">
+                        <div class="footer-name">Abhinav Gupta</div>
+                        <div class="footer-tagline">Web Developer</div>
+                        <div class="footer-tagline">© 2025 ABhinav Gupta. All rights reserved.</div>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <a href="www.linkedin.com/in/abhinav-gupta-a2a103334" class="social-link" title="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Abhinav-0709" class="social-link" title="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:mrxsahil247@gmail.com" class="social-link" title="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="cursur.js"></script>
+</body>
+
+</html>

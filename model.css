@@ -1,0 +1,175 @@
+.header {
+    /* top: 30%; */
+    position: relative;
+    width: 60vmin;
+    height: 60vmin;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    animation: pulse 3s infinite ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    max-width: 50%;
+    min-width: 300px;
+}
+
+.ring {
+    position: absolute;
+    border: 2px solid transparent;
+    border-bottom: 12px solid var(--color, rgb(245, 47, 215));
+    border-radius: 50%;
+    box-shadow: 0 0 40px var(--color, seashell);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+/* Ring sizes relative to container */
+.ring:nth-child(1) {
+    --color: rgb(255, 242, 0);
+    width: 80%;
+    height: 80%;
+    animation-name: rotate1;
+    animation-duration: 8s;
+    transform-origin: center center;
+}
+
+.ring:nth-child(2) {
+    --color: rgb(8, 0, 255);
+    width: 75%;
+    height: 75%;
+    animation-name: rotate2;
+    animation-duration: 10s;
+    transform-origin: center center;
+}
+
+.ring:nth-child(3) {
+    --color: rgb(244, 5, 216);
+    width: 65%;
+    height: 65%;
+    animation-name: rotate3;
+    animation-duration: 6s;
+    transform-origin: center center;
+}
+
+.ring:nth-child(4) {
+    --color: rgb(50, 32, 244);
+    width: 55%;
+    height: 55%;
+    animation-name: rotate4;
+    animation-duration: 7.5s;
+    transform-origin: center center;
+}
+
+.ring:nth-child(5) {
+    --color: rgb(255, 105, 180);
+    width: 45%;
+    height: 45%;
+    animation-name: rotate5;
+    animation-duration: 5.5s;
+    transform-origin: center center;
+}
+
+.ring:nth-child(6) {
+    --color: rgb(0, 195, 255);
+    width: 90%;
+    height: 90%;
+    animation-name: rotate6;
+    animation-duration: 9s;
+    transform-origin: center center;
+}
+
+.ring:nth-child(7) {
+    --color: rgb(228, 99, 218);
+    width: 70%;
+    height: 70%;
+    animation-name: rotate7;
+    animation-duration: 6.5s;
+    transform-origin: center center;
+}
+
+/* Full 3D rotation keyframes */
+@keyframes rotate1 {
+    from {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    from {
+        transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateX(450deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate3 {
+    from {
+        transform: rotateX(45deg) rotateY(45deg) rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateX(405deg) rotateY(405deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate4 {
+    from {
+        transform: rotateX(135deg) rotateY(180deg) rotateZ(45deg);
+    }
+
+    to {
+        transform: rotateX(495deg) rotateY(540deg) rotateZ(405deg);
+    }
+}
+
+@keyframes rotate5 {
+    from {
+        transform: rotateX(60deg) rotateY(30deg) rotateZ(90deg);
+    }
+
+    to {
+        transform: rotateX(420deg) rotateY(390deg) rotateZ(450deg);
+    }
+}
+
+@keyframes rotate6 {
+    from {
+        transform: rotateX(30deg) rotateY(270deg) rotateZ(180deg);
+    }
+
+    to {
+        transform: rotateX(390deg) rotateY(630deg) rotateZ(540deg);
+    }
+}
+
+@keyframes rotate7 {
+    from {
+        transform: rotateX(15deg) rotateY(120deg) rotateZ(270deg);
+    }
+
+    to {
+        transform: rotateX(375deg) rotateY(480deg) rotateZ(630deg);
+    }
+}
+
+.nucleus {
+    width: 7vmin;
+    height: 7vmin;
+    background: radial-gradient(circle, rgb(255, 21, 243), blue);
+    border-radius: 50%;
+    box-shadow: 0 0 2vmin rgb(255, 21, 243), 0 0 5vmin blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s ease-in-out infinite;
+    z-index: 10;
+}
